@@ -101,7 +101,7 @@
   sudo dpkg -i yandex-unified-agent_21.02.03_amd64.deb
   ```
 
-  Чтобы убедиться, что {{unified-agent-short-name}} успешно установлен и запущен, выполните команду `systemctl status unified-agent`. Пример работы команды:
+  Чтобы убедиться, что {{unified-agent-short-name}} успешно установлен и запущен, выполните команду `systemctl status unified_agent`. Пример работы команды:
 
   ```bash
   user@my-vm:~$ systemctl status unified-agent
@@ -112,10 +112,10 @@
       Tasks: 8 (limit: 507)
      Memory: 9.4M
      CGroup: /system.slice/unified-agent.service
-             └─141403 /usr/bin/unified_agent --config /etc/yandex/unified_agent/config.yml --log-priority NOTICE
+             └─141403 /usr/bin/unified_agent --config /etc/yc/unified_agent/config.yml --log-priority NOTICE
   ```
 
-  После установки пакета отредактируйте файл конфигурации `/etc/yandex/unified_agent/config.yml`, например, настроив агент для [поставки системных метрик Linux](../../../operations/unified-agent/linux_metrics.md). Подробнее про конфигурацию агента читайте в разделе [{#T}](./configuration.md).
+  После установки пакета отредактируйте файл конфигурации `/etc/yc/unified_agent/config.yml`, например, настроив агент для [поставки системных метрик Linux](../../../operations/unified-agent/linux_metrics.md). Подробнее про конфигурацию агента читайте в разделе [{#T}](./configuration.md).
 
 - Бинарный файл
 
